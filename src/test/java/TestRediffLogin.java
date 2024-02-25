@@ -26,7 +26,7 @@ public class TestRediffLogin extends BaseClass {
         test.log(Status.INFO ,"click rediff mail button");
         loginPageCLass  =dashBoard.clickRediffMailButton();
         test.log(Status.INFO ,"assert user name presence");
-        Assert.assertFalse( loginPageCLass.isUserNameTextDisplayed());
+        Assert.assertTrue( loginPageCLass.isUserNameTextDisplayed());
         test.log(Status.PASS , "tc001 is passed");
     }
 
