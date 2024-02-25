@@ -32,7 +32,7 @@ public class BaseClass {
         String browser = UtilityFile.readProperty("C:\\Users\\Sachin\\IdeaProjects\\PageObjectModel\\config.properties", "browser");
         if(browser.equalsIgnoreCase("chrome")) {
             ChromeOptions options = new ChromeOptions();
-            options.setBrowserVersion("121");
+            options.setBrowserVersion("122");
             driver = new ChromeDriver(options);
         } else if (browser.equalsIgnoreCase("firefox")) {
             System.setProperty( "webdriver.gecko.driver" , "C:\\Users\\Sachin\\Downloads\\geckodriver-v0.34.0-win32\\geckodriver.exe");
